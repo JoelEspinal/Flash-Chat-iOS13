@@ -81,10 +81,10 @@
             </objects>
             <point key="canvasLocation" x="983" y="104"/>
         </scene>
-        <!--Register To Chat-->
+        <!--Register View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RegisterToChat" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RegisterViewController" customModule="Flash_Chat_iOS13" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h2S-Ae-zdW">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -123,6 +123,9 @@
                                         <state key="normal" title="Register">
                                             <color key="titleColor" name="BrandBlue"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="lwd-AH-u8E" kind="show" id="kHe-GA-n3j"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="textfield" translatesAutoresizingMaskIntoConstraints="NO" id="jY9-l3-E1g">
                                         <rect key="frame" x="0.0" y="20" width="414" height="137"/>
@@ -163,6 +166,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="UM6-Kw-xUr"/>
+                    <connections>
+                        <outlet property="emailTextfield" destination="u72-XV-6FN" id="J6P-wT-YgM"/>
+                        <outlet property="passwordTextfield" destination="hLb-P9-NkF" id="1w3-D0-zd2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -367,6 +374,9 @@
     <designables>
         <designable name="y7D-jv-BlJ"/>
     </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="kHe-GA-n3j"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
         <image name="textfield" width="298" height="93"/>
