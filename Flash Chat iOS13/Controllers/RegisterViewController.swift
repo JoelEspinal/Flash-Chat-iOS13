@@ -19,9 +19,9 @@ class RegisterViewController: UIViewController {
         if let email = emailTextfield.text, let password = passwordTextfield.text {
             Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
                 if let e = error {
-                    print(e)
+                    print(e.localizedDescription)
                 } else {
-                    self.performSegue(withIdentifier: "ChatViewController", sender: self)
+                    self.performSegue(withIdentifier: "RegisterToChatSegue", sender: self)
                 }
             }
         }
