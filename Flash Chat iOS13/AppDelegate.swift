@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FirebaseFirestore
 import FirebaseCore
 import FirebaseAuth
 
@@ -18,6 +19,9 @@ import FirebaseAuth
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         FirebaseApp.configure()
+        
+        let db = Firestore.firestore()
+        print(db)
         
         return true
     }
