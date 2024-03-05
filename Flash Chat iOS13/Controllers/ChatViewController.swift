@@ -17,9 +17,7 @@ class ChatViewController: UIViewController {
     
     let db = Firestore.firestore()
     
-    var messages: [Message] = [
-        Message(sender: "abc@b.com", body: "a@b.com")
-    ]
+    var messages: [Message] = []
         
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +41,15 @@ class ChatViewController: UIViewController {
                 if let snapshotDocuments =  querySnapshot?.documents {
                     for doc in snapshotDocuments {
                         print(doc.data())
+                        let data = doc.data()
+                        if let messageSender = data[K.FStore.senderField] as? String, let messageBoddy = data[K.FStore.bodyField] as? String {
+                            let newMessage = Message(sender: messageSender, body: messageBoddy)
+                            self.messages.append(newMessage)
+                            
+                            DispatchQueue.main.async {
+                                self.tableView.reloadData()
+                            }
+                        }
                     }
                 }
             }
