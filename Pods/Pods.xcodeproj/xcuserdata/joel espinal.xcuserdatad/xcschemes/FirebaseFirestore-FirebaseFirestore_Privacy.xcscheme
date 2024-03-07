@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1BFBEDBF7E03729D43C96530EE190825"
-               BuildableName = "FBLPromises_Privacy.bundle"
-               BlueprintName = "PromisesObjC-FBLPromises_Privacy"
+               BlueprintIdentifier = "BE6D8CBE8245C88A1146DE42D80A7531"
+               BuildableName = "FirebaseFirestore_Privacy.bundle"
+               BlueprintName = "FirebaseFirestore-FirebaseFirestore_Privacy"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

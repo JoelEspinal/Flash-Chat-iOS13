@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6F8A929BDB6E633BE35459804508532F"
-               BuildableName = "CLTypingLabel.framework"
-               BlueprintName = "CLTypingLabel"
+               BlueprintIdentifier = "8AE1E2A4B497E543C01E68497F7C0901"
+               BuildableName = "leveldb_Privacy.bundle"
+               BlueprintName = "leveldb-library-leveldb_Privacy"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

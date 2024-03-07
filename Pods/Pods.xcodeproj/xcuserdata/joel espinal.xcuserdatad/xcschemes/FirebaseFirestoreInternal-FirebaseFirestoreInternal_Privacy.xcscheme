@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6F8A929BDB6E633BE35459804508532F"
-               BuildableName = "CLTypingLabel.framework"
-               BlueprintName = "CLTypingLabel"
+               BlueprintIdentifier = "591296C07DD97B6B624758F2DAF981DE"
+               BuildableName = "FirebaseFirestoreInternal_Privacy.bundle"
+               BlueprintName = "FirebaseFirestoreInternal-FirebaseFirestoreInternal_Privacy"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

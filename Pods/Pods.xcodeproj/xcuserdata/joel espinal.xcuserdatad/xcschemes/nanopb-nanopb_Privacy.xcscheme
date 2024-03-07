@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FE1DE31D91C32501251AE9687CDC2E0F"
-               BuildableName = "FirebaseCoreExtension.framework"
-               BlueprintName = "FirebaseCoreExtension"
+               BlueprintIdentifier = "55522A91938FF505CFEBEAD2DD85AE2D"
+               BuildableName = "nanopb_Privacy.bundle"
+               BlueprintName = "nanopb-nanopb_Privacy"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DE74CDAFE8319CEDA4F1232DEC00140C"
-               BuildableName = "FirebaseFirestoreInternal.framework"
-               BlueprintName = "FirebaseFirestoreInternal"
+               BlueprintIdentifier = "9C4575D64B2B6264CF6AB60FB03302AA"
+               BuildableName = "FirebaseCoreExtension_Privacy.bundle"
+               BlueprintName = "FirebaseCoreExtension-FirebaseCoreExtension_Privacy"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
