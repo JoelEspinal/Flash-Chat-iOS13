@@ -363,12 +363,15 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="bch-sO-wjM" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="seQ-D6-Qi1">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="seQ-D6-Qi1" userLabel="⚡️FlashChat">
                         <rect key="frame" x="0.0" y="48" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="barTintColor" name="BrandBlue"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" name="BrandBlue"/>
+                            <color key="textColor" systemColor="viewFlipsideBackgroundColor"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -384,6 +387,7 @@
     <inferredMetricsTieBreakers>
         <segue reference="vnp-a7-JTd"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
     <resources>
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
         <image name="textfield" width="298" height="93"/>
@@ -404,6 +408,9 @@
         </systemColor>
         <systemColor name="systemTealColor">
             <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="viewFlipsideBackgroundColor">
+            <color red="0.12156862745098039" green="0.12941176470588237" blue="0.14117647058823529" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
