@@ -97,11 +97,17 @@ extension ChatViewController: UITableViewDataSource {
         
         // This is a message from current user
         if message.sender == Auth.auth().currentUser?.email {
-            cell.leftImageView.isHidden = true
-            cell.rightImageView.isHidden = false
-            cell.messageBubble.backgroundColor = UIColor(named: K.BrandColors.lightPurple)
-            cell.label.textColor = UIColor(named: K.BrandColors.purple)
+            cell.leftImageView.isHidden = false
+            cell.rightImageView.isHidden = true
+            cell.messageBubble.backgroundColor = UIColor(named: K.BrandColors.purple)
+            cell.label.textColor = UIColor(named: K.BrandColors.lightPurple)
         }
+        // This is a message from another server
+        cell.leftImageView.isHidden = true
+        cell.rightImageView.isHidden = false
+        cell.messageBubble.backgroundColor = UIColor(named: K.BrandColors.lightPurple)
+        cell.label.textColor = UIColor(named: K.BrandColors.purple)
+        
         
         return cell
     }
