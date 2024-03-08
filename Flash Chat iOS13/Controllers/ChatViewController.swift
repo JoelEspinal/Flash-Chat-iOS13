@@ -95,19 +95,22 @@ extension ChatViewController: UITableViewDataSource {
         let cell = tableView.dequeueReusableCell(withIdentifier: K.cellIdentifier, for: indexPath) as! MessageCell
         cell.label.text = message.body
         
-        // This is a message from current user
-        if message.sender == Auth.auth().currentUser?.email {
-            cell.leftImageView.isHidden = false
-            cell.rightImageView.isHidden = true
-            cell.messageBubble.backgroundColor = UIColor(named: K.BrandColors.purple)
-            cell.label.textColor = UIColor(named: K.BrandColors.lightPurple)
+        if let authSender = Auth.auth().currentUser?.email {
+            // This is a message from current user
+            if message.sender ==  authSender {
+                cell.leftImageView.isHidden = true
+                cell.rightImageView.isHidden = false
+                cell.messageBubble.backgroundColor = UIColor(named: K.BrandColors.lightPurple)
+                cell.label.textColor = UIColor(named: K.BrandColors.purple)
+            }
+            // This is a message from another server
+            else {
+                cell.leftImageView.isHidden = false
+                cell.rightImageView.isHidden = true
+                cell.messageBubble.backgroundColor = UIColor(named: K.BrandColors.purple)
+                cell.label.textColor = UIColor(named: K.BrandColors.lighBlue)
+            }
         }
-        // This is a message from another server
-        cell.leftImageView.isHidden = true
-        cell.rightImageView.isHidden = false
-        cell.messageBubble.backgroundColor = UIColor(named: K.BrandColors.lightPurple)
-        cell.label.textColor = UIColor(named: K.BrandColors.purple)
-        
         
         return cell
     }
